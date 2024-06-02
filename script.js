@@ -140,10 +140,3 @@ const drawChart = ()=>{
   const chart = new google.visualization.PieChart(document.getElementById('myChart'));
   chart.draw(data, options);
 }
-
-const options = {
-    legend:'none',
-    width: 450,
-    height: 500,
-    colors: ['#0598d8', '#f97263'],
-};
