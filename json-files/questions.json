@@ -1,0 +1,58 @@
+{
+    "0":[
+        {
+            "no":1,
+            "question":"India's first-ever national police museum will establish in which city?",
+            "options":["Chennai", "Delhi", "Nagpur", "Kolkata"],
+            "correctAns":"Delhi"
+        },
+        {
+            "no":2,
+            "question":"Which country will host the 45th G7 summit 2019?",
+            "options":["Italy","Germany","France","Canada"],
+            "correctAns":"France"
+        }
+    ],
+    "1":[
+        {
+            "no":3,
+            "question":"Which country's women cricket team has clinched the Asia Cup Twenty-20 tournament 2018?",
+            "options":["SouthKorea","Bangladesh","India","Pakistan"],
+            "correctAns":"Bangladesh"
+        },
+        {
+            "no":4,
+            "question":"Who has won the men's singles French Open tennis tournament 2018?",
+            "options":["NovakDjokovic","DominicThiem","RogerFederer" ,"Rafael Nadal"],
+            "correctAns":"Rafael Nadal"
+        }
+    ],
+    "2":[
+        {
+            "no":5,
+            "question":"Which country’s football team has lifted the 2018 Intercontinental Cup football title?",
+            "options":["India","SriLanka","Kenya" ,"Argentina"],
+            "correctAns":"India"
+        },
+        {
+            "no":6,
+            "question":"Which of the following personalities from India is the only winner of Special Oscar in the history of Indian Cinema so far?",
+            "options":["Mrinal Sen","Shyam Bengal","Satyajit Ray","Mira Nair"],
+            "correctAns":"Satyajit Ray"
+        }
+    ],
+    "3":[
+        {
+            "no":7,
+            "question":"Who wrote Arthashastra?",
+            "options":["Kalhan","Visakhadatta","Bana Bhatta","Chanakya"],
+            "correctAns":"Chanakya"
+        },
+        {
+            "no":8,
+            "question":"H.J. Kania was the first...",
+            "options":["Chief Justice of the Supreme Court of India","Attorney-General of India","Solicitor-General of India","None of them"],
+            "correctAns":"Chief Justice of the Supreme Court of India"
+        }
+    ]
+}

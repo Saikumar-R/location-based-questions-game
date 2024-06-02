@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+    <div id="game-container"> 
+        <img src="./assets/BG.png" alt="Game background" id="background">
+            <h3 class="instruction mt-4">Please follow the sequence and click on the locations to start playing the game.</h3>
+        <div class="game-charecter">
+            <lord-icon
+                src="https://cdn.lordicon.com/szoiozyr.json"
+                trigger="hover"/>
+            </lord-icon>
+        </div>
+        <!-- Questions Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="alert-container d-none">
+                        <div class="alert-content col-md-12">
+                            <img src="./assets/info-icon.png" alt="info-icon" height="40px">
+                            <span class="alert-text">Please select an option to continue</span>
+                        </div>
+                    </div>
+                    <div class="question-header" id="questionText"></div>
+                    <div class="options container">
+                        <div class="options-row row justify-content-between">
+                            <div class="option col-md-6 pl-0 pr-3">
+                                <button type="button" class="btn btn-primary optn-btn"></button>
+                            </div>
+                            <div class="option col-md-6 pr-0 pl-3">
+                                <button type="button" class="btn btn-primary optn-btn"></button>
+                            </div>
+                        </div>
+                        <div class="options-row row justify-content-between">
+                            <div class="option col-md-6 pl-0 pr-3">
+                                <button type="button" class="btn btn-primary optn-btn"></button>
+                            </div>
+                            <div class="option col-md-6 pr-0 pl-3">
+                                <button type="button" class="btn btn-primary optn-btn"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="submitBtn">Submit</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Questions Modal End-->
+        <!-- Chart Modal -->
+        <div class="modal fade" id="chartModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="chartModelLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable chart-modal">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3>Game Over</h3>
+                        <h6>Refresh the page if you wish to start again or close the window</h6>
+                        <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Chart Modal End-->
+    </div>
+  
+    <script src="./script.js" type="module"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</body>
+</html>

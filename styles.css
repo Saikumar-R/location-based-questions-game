@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#game-container #background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#game-container .instruction{
+    color: white;
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .15);
+}
+#game-container .location-icon{
+    position: fixed;
+    background-color: transparent;
+    border: 0;
+    display: block;
+}
+.location-icon img{
+    height: 80px;
+}
+.location-icon .location-label{
+    color: antiquewhite;
+}
+.main-container #animated-icon{
+    height: 150px;
+    width: 150px;
+}
+.sub-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.icon-placement1{
+    top: 510px;
+    right: 72%;
+}
+.icon-placement2{
+    top: 150px;
+    left: 150px;
+}
+.icon-placement3{
+    top: 115px;
+    left: 635px;
+}
+.icon-placement4{
+    top: 240px;
+    right: 440px;
+}
+
+.game-charecter{
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 100%;
+}
+
+.game-charecter lord-icon{
+    position: fixed;
+    transition: 1s linear;
+    right: 55px;
+    bottom: 40px;
+    width: 100px;
+    height: 100px;
+    z-index: 99;
+}
+.modal-footer{
+    border-top: 0px !important;
+    justify-content: flex-start !important;
+}
+.modal-footer #submitBtn{
+    background: black;
+    width: 150px;
+    height: 40px;
+    border-style: groove;
+}
+.modal-body .question-header{
+    width: 100%;
+    min-height: 50px;
+    color: #ffff;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+.modal-body .options-row{
+    margin-top: 20px;
+}
+
+
+.options.container .option button{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.options.container .option button:active,
+.options.container .option button:hover,
+.options.container .option button:focus{
+    background-color: #6caef5;
+    color: #0a0a0a;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+}
+
+#chartModal h3,
+#chartModal h4{
+    text-align: center;
+}
+
+#staticBackdrop .modal-content{
+    width: 600px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+}
+
+#staticBackdrop .alert-container{
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .15);
+}
+#staticBackdrop .alert-container  .alert-text{
+    position: absolute;
+    top: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffff;
+}
+
